@@ -1,0 +1,15 @@
+<h1>Listing attractions</h1>
+<table>
+<tbody>
+<thead>
+  <tr>
+    <td><strong>Picture</strong></td>
+    <td><strong>Name</strong></td>
+    <td><strong>Tickets</strong></td>
+    <td><strong>Details</strong></td>
+  </tr>
+<thead>
+<%= render @attractions %>
+</tbody>
+</table>
+<p><%= link_to 'New Attraction', new_attraction_path if is_admin? %></p>

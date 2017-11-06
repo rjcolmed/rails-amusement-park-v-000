@@ -1,0 +1,10 @@
+<tr>
+<td>PIC</td>
+<td><%= attraction.name %></td>
+<td><%= attraction.tickets %></td>
+<% if is_admin? %>
+  <td><%= link_to "Show #{attraction.name}", attraction_path(attraction) %></td>
+<% else %>
+  <td><%= link_to "Go on #{attraction.name}", attraction_path(attraction) %></td>
+<% end %>
+</tr>
